@@ -6,6 +6,12 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * Main application class, invokes Spring Boot
+ *
+ * @author eloisa
+ * @createTime May 2019
+ */
 @MappedTypes(Users.class)
 @MapperScan("com.tingfeng.mybatis.springbootmybatis.dao")
 @SpringBootApplication
