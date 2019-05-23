@@ -5,6 +5,12 @@ import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
+/**
+ * Mapper class
+ *
+ * @author eloisa
+ * @createTime May 2019
+ */
 @Mapper
 public interface UsersMapper {
 

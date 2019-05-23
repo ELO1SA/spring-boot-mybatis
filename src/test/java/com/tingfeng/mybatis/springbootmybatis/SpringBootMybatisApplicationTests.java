@@ -1,5 +1,7 @@
 package com.tingfeng.mybatis.springbootmybatis;
 
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +25,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /**
  * JUnit tests for basic functionality
  *
- * @author eloisa
+ * @author Tingfeng Xia
+ * @createTime: May, 21, 2019
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
@@ -47,12 +50,13 @@ public class SpringBootMybatisApplicationTests {
 
     /**
      * Make sure that the database contains what we want before we start the test,
-     * using a test environment
+     * using a test environment. Also make sure the database is cleaned up after
+     * the tests are done
      * <p>
-     * This method is currently unusable, since the change to the post mapping of
-     * "update"
      */
-    private void initializeDatabase() throws SQLException {
+    @Before
+    @After
+    public void initializeDatabase() throws SQLException {
         // Data base connection info
         try {
             String url = "jdbc:mysql://localhost:3306/FOO";
@@ -104,7 +108,6 @@ public class SpringBootMybatisApplicationTests {
      */
     @Test
     public void queryAllTest() throws Exception {
-        initializeDatabase();
         assertThat(this.restTemplate.getForObject("http://localhost:" + port +
                 restPoint + "/all", String.class))
                 .contains("[{\"name\":\"xiaoming\",\"salary\":2333,\"id\":1}," +
@@ -116,8 +119,6 @@ public class SpringBootMybatisApplicationTests {
      */
     @Test
     public void insertOneUserTest() throws Exception {
-        // clean up the database
-        initializeDatabase();
         this.mockMvc.perform(post("http://localhost:" + port + restPoint +
                 "/insert/name=Jane&salary=1000"))
                 .andDo(print()).andExpect(status().isOk())
@@ -130,8 +131,6 @@ public class SpringBootMybatisApplicationTests {
      */
     @Test
     public void insertMultipleUserTest() throws Exception {
-        // clean up the database
-        initializeDatabase();
         this.mockMvc.perform(post("http://localhost:" + port + restPoint +
                 "/insert/name=Jane&salary=8848"))
                 .andDo(print()).andExpect(status().isOk())
@@ -149,10 +148,13 @@ public class SpringBootMybatisApplicationTests {
                         "{\"name\":\"Shidifen\",\"salary\":3,\"id\"")));
     }
 
+    /**
+     * Test if we properly handled the delete by name functionality.
+     * Notice that since deleteByName and deleteById are basically the
+     * same(in terms of logic), we omit the test for deleteById.
+     */
     @Test
     public void deleteUserTest() throws Exception {
-        // clean up the database
-        initializeDatabase();
         this.mockMvc.perform(post("http://localhost:" + port + restPoint +
                 "/insert/name=Jane&salary=8848"))
                 .andDo(print()).andExpect(status().isOk())
