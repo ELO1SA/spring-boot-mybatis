@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!-- 用户角色权限管理 -->
 <mapper namespace="io.tingfeng.mybatis.springbootmybatis.dao.UsersMapper">
-    <select id="findAll" resultType="io.tingfeng.mybatis.springbootmybatis.model.Users">
+    <select id="selectAll" resultType="io.tingfeng.mybatis.springbootmybatis.model.Users">
         SELECT *
         FROM users
     </select>
@@ -13,4 +13,10 @@
         INSERT INTO users(name, salary)
         values (#{name}, #{salary})
     </insert>
+
+    <delete id="delete" parameterType="io.tingfeng.mybatis.springbootmybatis.model.Users">
+        DELETE
+        FROM users
+        WHERE name = #{name}
+    </delete>
 </mapper>

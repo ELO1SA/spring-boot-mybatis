@@ -1,5 +1,8 @@
 package io.tingfeng.mybatis.springbootmybatis.model;
 
+/**
+ * 用户模型
+ */
 public class Users {
 
     private String name;

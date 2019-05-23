@@ -10,10 +10,26 @@ import java.util.List;
 
 @Mapper
 public interface UsersMapper {
-	// @Select("select * from users")
-	List<Users> findAll();
 
-//	@Insert("insert into users(name, salary) values(#{name}, #{salary})")
-//	@SelectKey(statement = "SELECT LAST_INSERT_ID()", keyProperty = "id", before = false, resultType = Integer.class)
-	void insert(Users users);
+    /**
+     * 选择所有，相当于SELECT * ...
+     *
+     * @return 数据库内所有用户
+     */
+    List<Users> selectAll();
+
+    /**
+     * 插入users
+     *
+     * @param users 要插入的新user
+     */
+    void insert(Users users);
+
+    /**
+     * 删除users。
+     * 为了测试方便，当前版本直接使用用户名删除用户（一次删除即删除所有同名用户）
+     *
+     * @param users 要删除的user
+     */
+    void delete(Users users);
 }
