@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05fa6f47-04b6-4ffa-a5fd-a8e20c6ae21f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-mybatis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/UserManageApi.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/tingfeng/mybatis/springbootmybatis/SpringBootMybatisApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tingfeng/mybatis/springbootmybatis/SpringBootMybatisApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/tingfeng/mybatis/springbootmybatis/config/SwaggerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tingfeng/mybatis/springbootmybatis/config/SwaggerConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/tingfeng/mybatis/springbootmybatis/dao/UsersMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tingfeng/mybatis/springbootmybatis/dao/UsersMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/tingfeng/mybatis/springbootmybatis/model/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tingfeng/mybatis/springbootmybatis/model/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/tingfeng/mybatis/springbootmybatis/resource/UsersResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tingfeng/mybatis/springbootmybatis/resource/UsersResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UsersMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UsersMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/tingfeng/mybatis/springbootmybatis/SpringBootMybatisApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tingfeng/mybatis/springbootmybatis/SpringBootMybatisApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/tingfeng/mybatis/springbootmybatis/SpringBootMybatisApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/tingfeng/mybatis/springbootmybatis/config/SwaggerConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/tingfeng/mybatis/springbootmybatis/dao/UsersMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/tingfeng/mybatis/springbootmybatis/model/Users.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/tingfeng/mybatis/springbootmybatis/resource/UsersResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UsersMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/UsersMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/io/tingfeng/mybatis/springbootmybatis/SpringBootMybatisApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/init.sql" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -65,7 +49,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tingfeng/mybatis/springbootmybatis/SpringBootMybatisApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
@@ -131,11 +115,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+            <state relative-caret-position="135">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/init.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -162,7 +155,6 @@
       <list>
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/555b2081-24a5-481a-93f9-77cd7e184101/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/io/tingfeng/mybatis/springbootmybatis/mapper/UsersMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/io/tingfeng/mybatis/springbootmybatis/SpringBootMybatisApplicationTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/tingfeng/mybatis/springbootmybatis/model/Users.java" />
@@ -173,6 +165,8 @@
         <option value="$PROJECT_DIR$/src/main/java/io/tingfeng/mybatis/springbootmybatis/SpringBootMybatisApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tingfeng/mybatis/springbootmybatis/config/SwaggerConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tingfeng/mybatis/springbootmybatis/SpringBootMybatisApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/init.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -267,14 +261,6 @@
               <item name="spring-boot-mybatis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -297,6 +283,10 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-mybatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
           </expand>
           <select />
@@ -439,7 +429,7 @@
       <option name="presentableId" value="Default" />
       <updated>1558512274246</updated>
       <workItem from="1558512275681" duration="1689000" />
-      <workItem from="1558578589846" duration="4710000" />
+      <workItem from="1558578589846" duration="5176000" />
     </task>
     <servers />
   </component>
@@ -449,13 +439,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6399000" />
+    <option name="totallyTimeSpent" value="6865000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -465,7 +455,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.32891566" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.38313252" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -501,13 +491,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/UserManageApi.iml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -568,6 +551,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/init.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
