@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05fa6f47-04b6-4ffa-a5fd-a8e20c6ae21f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tingfeng/mybatis/springbootmybatis/SpringBootMybatisApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tingfeng/mybatis/springbootmybatis/SpringBootMybatisApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tingfeng/mybatis/springbootmybatis/config/SwaggerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tingfeng/mybatis/springbootmybatis/config/SwaggerConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tingfeng/mybatis/springbootmybatis/dao/UsersMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tingfeng/mybatis/springbootmybatis/dao/UsersMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tingfeng/mybatis/springbootmybatis/resource/UsersResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tingfeng/mybatis/springbootmybatis/resource/UsersResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UsersMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UsersMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tingfeng/mybatis/springbootmybatis/SpringBootMybatisApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tingfeng/mybatis/springbootmybatis/SpringBootMybatisApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/web-app/WEB-INF/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web-app/WEB-INF/WEB-INF/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -59,14 +53,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/tingfeng/mybatis/springbootmybatis/SpringBootMybatisApplicationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="162" column="17" selection-start-line="162" selection-start-column="17" selection-end-line="162" selection-end-column="17" />
+            <state relative-caret-position="1158">
+              <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/web-app/WEB-INF/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="62" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -128,6 +131,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/mapper/UsersMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/tingfeng/mybatis/springbootmybatis/resource/UsersResource.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/tingfeng/mybatis/springbootmybatis/SpringBootMybatisApplicationTests.java" />
+        <option value="$PROJECT_DIR$/src/main/web-app/WEB-INF/WEB-INF/web.xml" />
       </list>
     </option>
   </component>
@@ -236,6 +240,30 @@
               <item name="spring-boot-mybatis" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-mybatis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="web-app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-mybatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="web-app" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-mybatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="web-app" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-mybatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -279,6 +307,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RecentsManager">
@@ -298,7 +327,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringBootMybatisApplication (1)">
+  <component name="RunManager" selected="JUnit.SpringBootMybatisApplicationTests (1)">
     <configuration name="SpringBootMybatisApplicationTests (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UserManageApi" />
       <extension name="coverage">
@@ -430,8 +459,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.SpringBootMybatisApplication (1)" />
         <item itemvalue="JUnit.SpringBootMybatisApplicationTests (1)" />
+        <item itemvalue="Spring Boot.SpringBootMybatisApplication (1)" />
         <item itemvalue="JUnit.SpringBootMybatisApplicationTests.insertMultipleUserTest" />
         <item itemvalue="JUnit.SpringBootMybatisApplicationTests.insertOneUserTest" />
         <item itemvalue="JUnit.SpringBootMybatisApplicationTests" />
@@ -449,20 +478,11 @@
       <option name="presentableId" value="Default" />
       <updated>1558512274246</updated>
       <workItem from="1558512275681" duration="1689000" />
-      <workItem from="1558578589846" duration="8463000" />
+      <workItem from="1558578589846" duration="8956000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SpringBootMybatisApplicationTests_insertOneUserTest - 2019.05.23 at 14h 11m 05s.xml">
-      <configuration name="SpringBootMybatisApplicationTests.insertOneUserTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SpringBootMybatisApplicationTests_insertOneUserTest - 2019.05.23 at 14h 11m 24s.xml">
-      <configuration name="SpringBootMybatisApplicationTests.insertOneUserTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SpringBootMybatisApplicationTests_insertOneUserTest - 2019.05.23 at 14h 12m 17s.xml">
-      <configuration name="SpringBootMybatisApplicationTests.insertOneUserTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SpringBootMybatisApplicationTests_insertOneUserTest - 2019.05.23 at 14h 12m 45s.xml">
       <configuration name="SpringBootMybatisApplicationTests.insertOneUserTest" configurationId="JUnit" />
     </history-entry>
@@ -484,15 +504,24 @@
     <history-entry file="SpringBootMybatisApplicationTests_(1) - 2019.05.23 at 14h 30m 07s.xml">
       <configuration name="SpringBootMybatisApplicationTests (1)" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SpringBootMybatisApplicationTests_(1) - 2019.05.23 at 14h 32m 24s.xml">
+      <configuration name="SpringBootMybatisApplicationTests (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringBootMybatisApplicationTests_(1) - 2019.05.23 at 14h 33m 07s.xml">
+      <configuration name="SpringBootMybatisApplicationTests (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringBootMybatisApplicationTests_(1) - 2019.05.23 at 14h 40m 02s.xml">
+      <configuration name="SpringBootMybatisApplicationTests (1)" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10152000" />
+    <option name="totallyTimeSpent" value="10645000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21101573" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21101573" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -500,9 +529,11 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Image Layers" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Dependency Viewer" weight="0.32891566" />
+      <window_info anchor="bottom" id="Inspection Results" weight="0.32891566" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.23614457" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.31084338" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -652,11 +683,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/tingfeng/mybatis/springbootmybatis/SpringBootMybatisApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="162" column="17" selection-start-line="162" selection-start-column="17" selection-end-line="162" selection-end-column="17" />
+        <state relative-caret-position="1158">
+          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/web-app/WEB-INF/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="62" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
         </state>
       </provider>
     </entry>
