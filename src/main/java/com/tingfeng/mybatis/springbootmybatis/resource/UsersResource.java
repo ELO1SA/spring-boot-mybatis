@@ -44,7 +44,8 @@ public class UsersResource {
      * @return 插入后当前数据库内所有人员信息
      */
     @PostMapping("/insert/name={name}&salary={salary}")
-    private List<Users> insertUser(@PathVariable("name") String name, @PathVariable("salary") String stringSalary) {
+    private List<Users> insertUser(@PathVariable("name") String name,
+                                   @PathVariable("salary") String stringSalary) {
         Users users = new Users();
         users.setName(name);
         users.setSalary(Long.parseLong(stringSalary));
@@ -62,7 +63,21 @@ public class UsersResource {
     private List<Users> deleteByName(@PathVariable("name") String name) {
         Users users = new Users();
         users.setName(name);
-        usersMapper.delete(users);
+        usersMapper.deleteByName(users);
+        return getAll();
+    }
+
+    /**
+     * 从数据库中删除ID为id的用户
+     * 由于id是primary key，此操作只会删除一个（或不删除）用户
+     * @param id 要删除的用户的id
+     * @return 删除后当前数据库内所有人员信息
+     */
+    @DeleteMapping(value = "delete/id={id}")
+    private List<Users> deleteById(@PathVariable("id") Integer id) {
+        Users users = new Users();
+        users.setId(id);
+        usersMapper.deleteById(users);
         return getAll();
     }
 }

@@ -28,5 +28,12 @@ public interface UsersMapper {
      *
      * @param users 要删除的user
      */
-    void delete(Users users);
+    void deleteByName(Users users);
+
+    /**
+     * 根据ID 删除users
+     *
+     * @param users 要删除的user
+     */
+    void deleteById(Users users);
 }

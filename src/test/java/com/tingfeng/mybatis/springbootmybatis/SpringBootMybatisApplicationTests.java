@@ -14,7 +14,8 @@ import java.sql.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.Matchers.containsString;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.hamcrest.Matchers.not;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -47,18 +48,22 @@ public class SpringBootMybatisApplicationTests {
     /**
      * Make sure that the database contains what we want before we start the test,
      * using a test environment
+     * <p>
+     * This method is currently unusable, since the change to the post mapping of
+     * "update"
      */
-    private void deleteXiaoGang() throws SQLException {
+    private void initializeDatabase() throws SQLException {
         // Data base connection info
         try {
             String url = "jdbc:mysql://localhost:3306/FOO";
-            String user = "eloisa";
-            String password = "Stevenami0921";
+            String user = "usr";
+            String password = "pswd";
             // 连接服务器
             con = DriverManager.getConnection(url, user, password);
             // 创建连接
             stmt = con.createStatement();
-            stmt.executeUpdate("DELETE FROM users WHERE salary=6666");
+            // 小明和小红的id分别是1和2，此操作不会影响他们
+            stmt.executeUpdate("DELETE FROM users WHERE id > 2");
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
@@ -87,7 +92,7 @@ public class SpringBootMybatisApplicationTests {
                 restPoint + "/home", String.class))
                 .contains("This is home page, although (almost) empty");
 
-        // FIXME: This should be the same
+        // This should be the same
         this.mockMvc.perform(get(restPoint + "/home"))
                 .andDo(print()).andExpect(status().isOk())
                 .andExpect(content().string(containsString(
@@ -96,11 +101,10 @@ public class SpringBootMybatisApplicationTests {
 
     /**
      * Test if the "/rest/users/all" tab that queries from mySQL server loads correctly
-     *
-     * @throws Exception w
      */
     @Test
     public void queryAllTest() throws Exception {
+        initializeDatabase();
         assertThat(this.restTemplate.getForObject("http://localhost:" + port +
                 restPoint + "/all", String.class))
                 .contains("[{\"name\":\"xiaoming\",\"salary\":2333,\"id\":1}," +
@@ -108,21 +112,57 @@ public class SpringBootMybatisApplicationTests {
     }
 
     /**
-     * Test if the "/rest/users/update" tab successfully adds xiaogang to the mySQL
-     * server. We first made sure that the table contains no xiaogang instance and
-     * then queried the database.
-     *
-     * @throws Exception if the server wasn't able to respond as expected
+     * Test if the inserting one user at a time works
      */
     @Test
-    public void queryUpdateTest() throws Exception {
-        deleteXiaoGang();
-        assertThat(this.restTemplate.getForObject("http://localhost:" + port +
-                restPoint + "/all", String.class))
-                .doesNotContain("{\"name\":\"xiaogang\",\"salary\":6666,\"id\":");
-        assertThat(this.restTemplate.getForObject("http://localhost:" + port +
-                restPoint + "/update", String.class))
-                .contains("{\"name\":\"xiaogang\",\"salary\":6666,\"id\":");
-        deleteXiaoGang();
+    public void insertOneUserTest() throws Exception {
+        // clean up the database
+        initializeDatabase();
+        this.mockMvc.perform(post("http://localhost:" + port + restPoint +
+                "/insert/name=Jane&salary=1000"))
+                .andDo(print()).andExpect(status().isOk())
+                .andExpect(content().string(containsString(
+                        "{\"name\":\"Jane\",\"salary\":1000,\"id\"")));
+    }
+
+    /**
+     * Test if the database can handle multiple insertions
+     */
+    @Test
+    public void insertMultipleUserTest() throws Exception {
+        // clean up the database
+        initializeDatabase();
+        this.mockMvc.perform(post("http://localhost:" + port + restPoint +
+                "/insert/name=Jane&salary=8848"))
+                .andDo(print()).andExpect(status().isOk())
+                .andExpect(content().string(containsString(
+                        "{\"name\":\"Jane\",\"salary\":8848,\"id\"")));
+        this.mockMvc.perform(post("http://localhost:" + port + restPoint +
+                "/insert/name=Steven&salary=1"))
+                .andDo(print()).andExpect(status().isOk())
+                .andExpect(content().string(containsString(
+                        "{\"name\":\"Steven\",\"salary\":1,\"id\"")));
+        this.mockMvc.perform(post("http://localhost:" + port + restPoint +
+                "/insert/name=Shidifen&salary=3"))
+                .andDo(print()).andExpect(status().isOk())
+                .andExpect(content().string(containsString(
+                        "{\"name\":\"Shidifen\",\"salary\":3,\"id\"")));
+    }
+
+    @Test
+    public void deleteUserTest() throws Exception {
+        // clean up the database
+        initializeDatabase();
+        this.mockMvc.perform(post("http://localhost:" + port + restPoint +
+                "/insert/name=Jane&salary=8848"))
+                .andDo(print()).andExpect(status().isOk())
+                .andExpect(content().string(containsString(
+                        "{\"name\":\"Jane\",\"salary\":8848,\"id\"")));
+        // now the database shall contain the user "Jane" w/ salary 8848
+        this.mockMvc.perform(delete("http://localhost" + port + restPoint +
+                "/delete/name=Jane"))
+                .andDo(print()).andExpect(status().isOk())
+                .andExpect(content().string(not(containsString(
+                        "{\"name\":\"Jane\",\"salary\":8848,\"id\""))));
     }
 }

@@ -8,10 +8,8 @@ import org.springframework.context.annotation.Import;
 import org.springframework.core.annotation.Order;
 import springfox.bean.validators.configuration.BeanValidatorPluginsConfiguration;
 import springfox.documentation.builders.ApiInfoBuilder;
-import springfox.documentation.builders.ParameterBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
-import springfox.documentation.schema.ModelRef;
 import springfox.documentation.service.ApiInfo;
 import springfox.documentation.service.Parameter;
 import springfox.documentation.spi.DocumentationType;
@@ -44,7 +42,8 @@ public class SwaggerConfiguration {
                 .apiInfo(apiInfo())
                 .groupName("defaultApiGroup")
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.tingfeng.mybatis.springbootmybatis.resource"))
+                .apis(RequestHandlerSelectors
+                        .basePackage("com.tingfeng.mybatis.springbootmybatis.resource"))
                 .paths(PathSelectors.any())
                 .build().globalOperationParameters(parameters);
     }

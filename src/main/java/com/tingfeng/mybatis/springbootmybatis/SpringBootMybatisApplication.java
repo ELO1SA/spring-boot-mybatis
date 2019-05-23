@@ -12,7 +12,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringBootMybatisApplication {
 
     public static void main(String[] args) {
-        System.out.println("==================  default@http://localhost:30001/doc.html  =================");
+        System.out.println("==================" +
+                "  default@http://localhost:30001/doc.html " +
+                " =================");
         SpringApplication.run(SpringBootMybatisApplication.class, args);
     }
 }
