@@ -1,4 +1,4 @@
-package io.tingfeng.mybatis.springbootmybatis.mapper;
+package io.tingfeng.mybatis.springbootmybatis.dao;
 
 import io.tingfeng.mybatis.springbootmybatis.model.Users;
 import org.apache.ibatis.annotations.Insert;
@@ -10,15 +10,10 @@ import java.util.List;
 
 @Mapper
 public interface UsersMapper {
-
-	/**
-	 * 
-	 * @return
-	 */
-	@Select("select * from users")
+	// @Select("select * from users")
 	List<Users> findAll();
 
-	@Insert("insert into users(name, salary) values(#{name}, #{salary})")
-	@SelectKey(statement = "SELECT LAST_INSERT_ID()", keyProperty = "id", before = false, resultType = Integer.class)
+//	@Insert("insert into users(name, salary) values(#{name}, #{salary})")
+//	@SelectKey(statement = "SELECT LAST_INSERT_ID()", keyProperty = "id", before = false, resultType = Integer.class)
 	void insert(Users users);
 }

@@ -1,6 +1,6 @@
 package io.tingfeng.mybatis.springbootmybatis.resource;
 
-import io.tingfeng.mybatis.springbootmybatis.mapper.UsersMapper;
+import io.tingfeng.mybatis.springbootmybatis.dao.UsersMapper;
 import io.tingfeng.mybatis.springbootmybatis.model.Users;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
