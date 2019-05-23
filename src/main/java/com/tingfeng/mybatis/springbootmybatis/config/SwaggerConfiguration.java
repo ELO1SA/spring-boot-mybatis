@@ -11,6 +11,7 @@ import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
+import springfox.documentation.service.Contact;
 import springfox.documentation.service.Parameter;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
@@ -20,12 +21,17 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import java.util.List;
 
+/**
+ * The configurations for swagger
+ *
+ * @author eloisa
+ * @createTime May 2019
+ */
 @Configuration
 @EnableSwagger2
 @EnableSwaggerBootstrapUI
 @Import(BeanValidatorPluginsConfiguration.class)
 public class SwaggerConfiguration {
-
     @Bean
     public UiConfiguration uiConfiguration() {
         return UiConfigurationBuilder.builder().supportedSubmitMethods(new String[]{})
@@ -49,16 +55,17 @@ public class SwaggerConfiguration {
     }
 
     /**
-     * 信息
+     * Information slot
      */
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("UI using swagger bootstrap (trial version)")
+                .title("UI using swagger bootstrap (V0.1)")
                 .description("This is description")
-                .termsOfServiceUrl("https://github.com/ELO1SA")
-                .contact("tingfeng.xia@mail.utoronto.ca")
+                .termsOfServiceUrl("unavailable")
+                .contact(new Contact("Tingfeng Xia",
+                        "https://www.github.com/ELO1SA",
+                        "mailto:tingfeng.xia@mail.utoronto.ca"))
                 .version("0.1")
                 .build();
     }
-
 }
