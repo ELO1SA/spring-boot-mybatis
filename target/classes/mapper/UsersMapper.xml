@@ -2,19 +2,18 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<!-- 用户角色权限管理 -->
-<mapper namespace="io.tingfeng.mybatis.springbootmybatis.dao.UsersMapper">
-    <select id="selectAll" resultType="io.tingfeng.mybatis.springbootmybatis.model.Users">
+<mapper namespace="com.tingfeng.mybatis.springbootmybatis.dao.UsersMapper">
+    <select id="selectAll" resultType="com.tingfeng.mybatis.springbootmybatis.model.Users">
         SELECT *
         FROM users
     </select>
 
-    <insert id="insert" parameterType="io.tingfeng.mybatis.springbootmybatis.model.Users">
+    <insert id="insert" parameterType="com.tingfeng.mybatis.springbootmybatis.model.Users">
         INSERT INTO users(name, salary)
         values (#{name}, #{salary})
     </insert>
 
-    <delete id="delete" parameterType="io.tingfeng.mybatis.springbootmybatis.model.Users">
+    <delete id="delete" parameterType="com.tingfeng.mybatis.springbootmybatis.model.Users">
         DELETE
         FROM users
         WHERE name = #{name}
