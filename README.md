@@ -14,9 +14,9 @@
     <parent>
       	<groupId>org.springframework.boot</groupId>
       	<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.1.5.RELEASE</version>
+            <version>2.1.5.RELEASE</version>
    		<relativePath/>
-  	</parent>
+    </parent>
     ``````
 - Java JDK 1.8
     ``````
