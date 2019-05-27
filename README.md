@@ -12,18 +12,18 @@
     Excerpt from ```pom.xml```:
     ``````
     <parent>
-      	<groupId>org.springframework.boot</groupId>
-      	<artifactId>spring-boot-starter-parent</artifactId>
-            <version>2.1.5.RELEASE</version>
+      	<groupId>org.springframework.boot</groupId>  
+      	<artifactId>spring-boot-starter-parent</artifactId>  
+      	<version>2.1.5.RELEASE</version>  
    		<relativePath/>
     </parent>
     ``````
 - Java JDK 1.8
     ``````
     <properties>
-    	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-   		<java.version>1.8</java.version>
+    	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>  
+    	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>  
+   		<java.version>1.8</java.version>  
     </properties>
     ``````
 - Database dialect used: MySQL@5.7

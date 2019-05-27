@@ -2,10 +2,13 @@
 
 CREATE DATABASE FOO;
 USE FOO;
-CREATE TABLE users
+CREATE TABLE `users`
 (
-    id int(11) NOT NULL AUTO_INCREMENT,
-    name varchar(100) NOT NULL,
-    salary float(10) DEFAULT NULL,
-    PRIMARY KEY(id, name)
-);
+    `id`     int(11) NOT NULL AUTO_INCREMENT,
+    `name`   varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+    `salary` float                                   DEFAULT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE = InnoDB
+  AUTO_INCREMENT = 108
+  DEFAULT CHARSET = utf8mb4
+  COLLATE = utf8mb4_unicode_ci
