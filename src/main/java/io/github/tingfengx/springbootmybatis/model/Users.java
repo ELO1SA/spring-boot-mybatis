@@ -1,4 +1,4 @@
-package com.tingfeng.mybatis.springbootmybatis.model;
+package io.github.tingfengx.springbootmybatis.model;
 
 /**
  * 用户模型

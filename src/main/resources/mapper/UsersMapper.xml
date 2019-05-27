@@ -2,24 +2,24 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.tingfeng.mybatis.springbootmybatis.dao.UsersMapper">
-    <select id="selectAll" resultType="com.tingfeng.mybatis.springbootmybatis.model.Users">
+<mapper namespace="io.github.tingfengx.springbootmybatis.dao.UsersMapper">
+    <select id="selectAll" resultType="io.github.tingfengx.springbootmybatis.model.Users">
         SELECT *
         FROM users
     </select>
 
-    <insert id="insert" parameterType="com.tingfeng.mybatis.springbootmybatis.model.Users">
+    <insert id="insert" parameterType="io.github.tingfengx.springbootmybatis.model.Users">
         INSERT INTO users(name, salary)
         values (#{name}, #{salary})
     </insert>
 
-    <delete id="deleteByName" parameterType="com.tingfeng.mybatis.springbootmybatis.model.Users">
+    <delete id="deleteByName" parameterType="io.github.tingfengx.springbootmybatis.model.Users">
         DELETE
         FROM users
         WHERE name = #{name}
     </delete>
 
-    <delete id="deleteById" parameterType="com.tingfeng.mybatis.springbootmybatis.model.Users">
+    <delete id="deleteById" parameterType="io.github.tingfengx.springbootmybatis.model.Users">
         DELETE
         FROM users
         WHERE id = #{id}

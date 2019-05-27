@@ -1,6 +1,6 @@
-package com.tingfeng.mybatis.springbootmybatis.dao;
+package io.github.tingfengx.springbootmybatis.dao;
 
-import com.tingfeng.mybatis.springbootmybatis.model.Users;
+import io.github.tingfengx.springbootmybatis.model.Users;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

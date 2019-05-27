@@ -1,7 +1,7 @@
-package com.tingfeng.mybatis.springbootmybatis.resource;
+package io.github.tingfengx.springbootmybatis.resource;
 
-import com.tingfeng.mybatis.springbootmybatis.dao.UsersMapper;
-import com.tingfeng.mybatis.springbootmybatis.model.Users;
+import io.github.tingfengx.springbootmybatis.dao.UsersMapper;
+import io.github.tingfengx.springbootmybatis.model.Users;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

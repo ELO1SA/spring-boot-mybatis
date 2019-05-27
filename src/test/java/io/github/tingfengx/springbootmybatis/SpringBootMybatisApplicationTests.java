@@ -1,4 +1,4 @@
-package com.tingfeng.mybatis.springbootmybatis;
+package io.github.tingfengx.springbootmybatis;
 
 import org.junit.After;
 import org.junit.Before;

@@ -1,4 +1,4 @@
-package com.tingfeng.mybatis.springbootmybatis.config;
+package io.github.tingfengx.springbootmybatis.config;
 
 import com.github.xiaoymin.swaggerbootstrapui.annotations.EnableSwaggerBootstrapUI;
 import com.google.common.collect.Lists;
@@ -49,7 +49,7 @@ public class SwaggerConfiguration {
                 .groupName("defaultApiGroup")
                 .select()
                 .apis(RequestHandlerSelectors
-                        .basePackage("com.tingfeng.mybatis.springbootmybatis.resource"))
+                        .basePackage("io.github.tingfengx.springbootmybatis.resource"))
                 .paths(PathSelectors.any())
                 .build().globalOperationParameters(parameters);
     }
@@ -63,7 +63,7 @@ public class SwaggerConfiguration {
                 .description("This is description")
                 .termsOfServiceUrl("unavailable")
                 .contact(new Contact("Tingfeng Xia",
-                        "https://www.github.com/ELO1SA",
+                        "tingfengx.github.io",
                         "mailto:tingfeng.xia@mail.utoronto.ca"))
                 .version("0.1")
                 .build();
