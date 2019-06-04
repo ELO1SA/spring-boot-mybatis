@@ -27,5 +27,7 @@
     </properties>
     ``````
 - Database dialect used: MySQL@5.7
-    - Follow ```src->main->resources->init.sql``` for the layout of the database
-- Web front-end: swagger bootstrap, available here: https://github.com/xiaoymin/swagger-bootstrap-ui
+    - Follow ```src/main/resources/init.sql``` for the layout of the database
+- Web front-end: swagger bootstrap
+    - Not for the purpose of presentation, but for testing. (Since we are using a RESTful design)
+    - Available here: https://github.com/xiaoymin/swagger-bootstrap-ui
